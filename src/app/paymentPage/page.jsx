@@ -67,10 +67,11 @@ const PaymentPage = () => {
             <Image src="/pago.png" alt="" fill className={styles.image} />
           </div>
         </div>
-
+        <Link href="./login">
         <div className={styles.login}>
           <p>Iniciar sesión en PayPal</p>
         </div>
+        </Link>
 
         <div className={styles.enviar}>
           <p>Enviar pago</p>
