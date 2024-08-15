@@ -2,22 +2,25 @@ import React from 'react'
 import styles from "./priceCard.module.css"
 import Image from 'next/image';
 import Button from '../button/button';
+import Link from 'next/link';
 
-const pricePageCard = () => {
+
+
+const pricePageCard = ({price, heading, subHeading}) => {
   return (
     <div className={styles.container}>
         <div className={styles.wrapper}>
         <div className={styles.cardHeader}>
-             <p className={styles.cardHeading}>ECO RESPONSABILIDAD</p>
-             <p className={styles.cardSubHeading}>AL ALCANCE DE TODOS!</p>
+             <p className={styles.cardHeading}>{heading}</p>
+             <p className={styles.cardSubHeading}>{subHeading}</p>
         </div>
 
         <div className={styles.priceSection}>
-            <p className={styles.price}>20€</p>
+            <p className={styles.price}>{price}</p>
              <p className={styles.priceText}>/año sin IVA</p>
         </div>
         
-        <Button />
+        <Link href={"./paymentPage"}><Button price={price}/></Link>
         
         <div className={styles.descSection}>
             <p className={styles.descHeading}>Envíe su residuo a nuestro almacén o nuestros puntos de recogida:</p>
