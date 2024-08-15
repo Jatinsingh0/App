@@ -82,7 +82,7 @@
 .imageContainer {
     flex: 1;
     width: 13.27px;
-    height:13.27px;
+    height: 13.27px;
     padding: 1.58px 2.84px 1.55px 2.84px;
     gap: 0px;
     opacity: 0px;
@@ -97,7 +97,7 @@
 .tickImageContainer {
     flex: 1;
     width: 9.48px;
-    height:11.48px;
+    height: 11.48px;
     gap: 0px;
     opacity: 0px;
     position: relative;
@@ -113,4 +113,3 @@
     line-height: 14.53px;
     letter-spacing: 0.05176093429327011px;
 }
-

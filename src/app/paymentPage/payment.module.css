@@ -1,0 +1,144 @@
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+/* Style for the payment heading */
+.paymentHeading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #B8D0CC;
+    height: 193px;
+}
+
+/* Container for the logo image */
+.imageContainer {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+.image {
+    object-fit: cover;
+}
+
+/* Style for the paymentText */
+.paymentText {
+    color: var(--headingTextColor);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Content styles */
+.content {
+    gap: 0px;
+    background-color: var(--headingTextColor);
+    color: #FFFFFF;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: -20px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.content div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.Suscríbete {
+    height: 16px;
+    gap: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 15.72px;
+}
+
+.price {
+    font-size: 45.73px;
+    font-weight: 700;
+}
+
+.Impuesto {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.total {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.Correo {
+    text-align: left;
+    background-color: #ffff;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.CorreoHeading {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 3px;
+}
+
+.CorreoSubHeading {
+    color: #00000066;
+}
+
+/* Styles for the images container */
+.iconsImageContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Styles for each individual image */
+.iconsImageContainer .imageWrapper {
+    width: 196px;
+    height: 77px;
+    position: relative;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+    .imageWrapper {
+        width: 90px;
+        height: 76px;
+    }
+}
+
+.login {
+    background-color: var(--headingTextColor);
+    margin-top: 28px;
+    padding: 14px 24px;
+    color: #F2F2F2;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.enviar {
+    margin-top: 149px;
+    color: #2F4541;
+    padding: 14px 24px 14px 24px;
+    gap: 8px;
+    border-radius: 36px;
+    border: 1px;
+    opacity: 0px;
+    border: 1px solid #2F4541;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
