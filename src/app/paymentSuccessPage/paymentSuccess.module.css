@@ -1,66 +1,37 @@
-.wrapper {
-    margin: 0 auto;
-    width: 100%;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
     text-align: center;
 }
 
-/* Style for the payment heading */
-.planHeading {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.successLogo {
+    width: 90px;
+    height: 90px;
+    margin-top: 99px;
     position: relative;
-    background-color: #B8D0CC;
-    height: 93px;
 }
 
-/* Container for the logo image */
-.imageContainer {
-    flex-shrink: 0;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    left: 0;
-    cursor: pointer;
-
-}
-
-.image {
+.success {
     object-fit: cover;
 }
 
-/* Style for the paymentText */
-.planText {
-    color: var(--headingTextColor);
+.textContainer {
+    margin-top: 20px; /* Add space between the image and text */
+}
+
+.heading {
     font-size: 28px;
     font-weight: 700;
-}
-
-.priceSection {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 14px 0;
     color: var(--headingTextColor);
-    margin-top: 24px;
-    margin-bottom: 24px;
 }
 
-.priceSection .price {
-    font-size: 72.8px;
+.subHeading {
+    font-size: 18px;
     font-weight: 600;
-    Line-height: 72.81px;
-}
-
-.priceSection .priceText {
-    font-size: 19px;
-    font-weight: 400;
-}
-
-.desc {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29.05px;
-    color: var(--headingTextColor);
+    color:  #393939;
 }
 
 .planDetails {
