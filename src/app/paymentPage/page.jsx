@@ -50,32 +50,43 @@ const PaymentPage = () => {
 
         <div className={styles.iconsImageContainer}>
           <div className={styles.imageWrapper}>
-            <Image
-              src="/tarjeta.png"
-              alt=""
-              fill
-              className={styles.imageTarjeta}
-            />
+            <Link href={"/bank"}>
+              <Image
+                src="/tarjeta.png"
+                alt=""
+                fill
+                className={styles.imageTarjeta}
+              />
+            </Link>
           </div>
           <div className={styles.imageWrapper}>
-            <Image src="/paypal.png" alt="" fill className={styles.image} />
+            <Link href={"/reviewPaymentPage"}>
+              <Image src="/paypal.png" alt="" fill className={styles.image} />
+            </Link>
           </div>
+
           <div className={styles.imageWrapper}>
-            <Image src="/bank.png" alt="" fill className={styles.image} />
+            <Link href={"/bank"}>
+              <Image src="/bank.png" alt="" fill className={styles.image} />
+            </Link>
           </div>
+
           <div className={styles.imageWrapper}>
-            <Image src="/pago.png" alt="" fill className={styles.image} />
+            <Link href={"/bank"}>
+              <Image src="/pago.png" alt="" fill className={styles.image} />
+            </Link>
           </div>
         </div>
         <Link href="./login">
-        <div className={styles.login}>
-          <p>Iniciar sesión en PayPal</p>
-        </div>
+          <div className={styles.login}>
+            <p>Iniciar sesión en PayPal</p>
+          </div>
         </Link>
 
-        <Link href={"/reviewPaymentPage"}><div className={styles.enviar}>
-          <p>Enviar pago</p>
-        </div>
+        <Link href={"/reviewPaymentPage"}>
+          <div className={styles.enviar}>
+            <p>Enviar pago</p>
+          </div>
         </Link>
       </div>
     </div>

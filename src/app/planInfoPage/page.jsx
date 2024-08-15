@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./planInfoPage.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import Button from "../components/button/button";
 
 const page = () => {
   return (
@@ -23,36 +22,38 @@ const page = () => {
         </div>
 
         <div className={styles.priceSection}>
-            <p className={styles.price}>20€</p>
-             <p className={styles.priceText}>/año sin IVA</p>
+          <p className={styles.price}>20€</p>
+          <p className={styles.priceText}>/año sin IVA</p>
         </div>
         <p className={styles.desc}>ECORESPONSABILIDAD</p>
 
         <div className={styles.planDetails}>
-            <div className={styles.planDetails1}>
-                <p>ID de transacción</p>
-                <p>Cantidad</p>
-                <p>Cargar :</p>
-                <p>Total :</p>
-                <p>Método de pago:</p>
-                <p>Tiempo :</p>
-            </div>
-            <div className={styles.planDetails2}>
-                <p>#71L69PJK3</p>
-                <p>20.00€</p>
-                <p>0 €</p>
-                <p>2000€</p>
-                <p>Tarjeta de débito</p>
-                <p>11/01/22, 22:45</p>
-            </div>
+          <div className={styles.planDetails1}>
+            <p>ID de transacción</p>
+            <p>Cantidad</p>
+            <p>Cargar :</p>
+            <p>Total :</p>
+            <p>Método de pago:</p>
+            <p>Tiempo :</p>
+          </div>
+          <div className={styles.planDetails2}>
+            <p>#71L69PJK3</p>
+            <p>20.00€</p>
+            <p>0 €</p>
+            <p>2000€</p>
+            <p>Tarjeta de débito</p>
+            <p>11/01/22, 22:45</p>
+          </div>
         </div>
-        <button type="button" className={styles.button}>
-        Envía tus residuos
-      </button>
-      <button type="button" className={styles.button2}>
-        Envía tus residuos
-      </button>
-      
+        <Link href={"/paymentSuccessPage"}><button type="button" className={styles.button}>
+          Envía tus residuos
+        </button>
+        </Link>
+        <Link href={"/paymentSuccessPage"}>
+        <button type="button" className={styles.button2}>
+          Envía tus residuos
+        </button>
+        </Link>
       </div>
     </div>
   );
