@@ -110,3 +110,27 @@
     margin-top: 4px;
     gap: 2px;
 }
+
+@media screen and (max-width: 368px){
+    .desc {
+        font-size: 18px;
+    }
+    .priceSection .price {
+        font-size: 60.8px;
+    }
+    
+    .priceSection .priceText {
+        font-size: 14px;
+    }
+    .planDetails {
+        font-size: 11px;
+    }
+    .button{
+        width: 200px;
+    height: 45px;
+    }
+    .button2{
+        width: 200px;
+    height: 45px;
+    }
+}

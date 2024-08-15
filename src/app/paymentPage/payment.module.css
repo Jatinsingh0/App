@@ -62,11 +62,23 @@
     line-height: 15.72px;
 }
 
+
+
 .price {
     font-size: 45.73px;
     font-weight: 700;
 }
-
+@media screen and (max-width: 428px){
+    .paymentHeading {
+        height: 163px;
+    }
+    .Suscríbete{
+     font-size: 12px;
+    }
+    .price {
+     font-size: 35.73px;
+ }
+ }
 .Impuesto {
     font-size: 10px;
     font-weight: 400;
@@ -116,6 +128,7 @@
     }
 }
 
+
 .login {
     background-color: var(--headingTextColor);
     margin-top: 28px;
@@ -124,7 +137,6 @@
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
-
 }
 
 .enviar {
@@ -142,3 +154,52 @@
     cursor: pointer;
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 348px){
+    .paymentHeading {
+        height: 143px;
+    }
+    .Suscríbete{
+     font-size: 10px;
+    }
+    .price {
+     font-size: 32.73px;
+ }
+ .CorreoHeading {
+    font-size: 12px;
+}
+
+.CorreoSubHeading {
+    font-size: 12px;
+}
+.login {
+    font-size: 14px;
+}
+ }
+
+ @media screen and (max-width: 300px){
+    .paymentHeading {
+        height: 143px;
+    }
+    .Suscríbete{
+     font-size: 8px;
+    }
+    .price {
+     font-size: 26px;
+ }
+ .CorreoHeading {
+    font-size: 10px;
+}
+
+.CorreoSubHeading {
+    font-size: 8px;
+}
+.login {
+    font-size: 10px;
+}
+.paymentText {
+    
+    font-size: 22px;
+    font-weight: 700;
+}
+ }
