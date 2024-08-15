@@ -1,0 +1,110 @@
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+/* Style for the payment heading */
+.planHeading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #B8D0CC;
+    height: 93px;
+}
+
+/* Container for the logo image */
+.imageContainer {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    
+}
+
+.image {
+    object-fit: cover;
+}
+
+/* Style for the paymentText */
+.planText {
+    color: var(--headingTextColor);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.priceSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--headingTextColor);
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.priceSection .price{
+    font-size: 72.8px;
+    font-weight: 600;
+    Line-height: 72.81px;
+}
+
+.priceSection .priceText{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.desc{
+font-size: 24px;
+font-weight: 700;
+line-height: 29.05px;
+color: var(--headingTextColor);
+}
+
+.planDetails{
+    padding-top: 26px;
+    padding-bottom: 56px;
+    color: var(--headingTextColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 26px;
+}
+.planDetails2{
+    text-align: right;
+}
+
+
+    .button{
+        color: #fff;
+        width: 242px;
+        height:45px;
+        padding: 9.23px 20.78px 10.34px 14.8px;
+        border: none;
+        border-radius: 6317.6px;
+        opacity: 0px;
+        background-color: var(--buttonBg);
+        font-weight: 700;
+        line-height: 17px;
+        cursor: pointer;
+    }
+.button2{
+    background-color: #fff;
+    color: var(--buttonBg);
+    width: 242px;
+        height:45px;
+        padding: 9.23px 20.78px 10.34px 14.8px;
+        border: 1px solid #2F4541;
+        border-radius: 6317.6px;
+        opacity: 0px;
+        font-weight: 700;
+        line-height: 17px;
+        cursor: pointer;
+        margin-top: 4px;
+        gap: 2px;
+}

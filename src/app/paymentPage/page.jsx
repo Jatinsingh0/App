@@ -73,9 +73,10 @@ const PaymentPage = () => {
         </div>
         </Link>
 
-        <div className={styles.enviar}>
+        <Link href={"/reviewPaymentPage"}><div className={styles.enviar}>
           <p>Enviar pago</p>
         </div>
+        </Link>
       </div>
     </div>
   );

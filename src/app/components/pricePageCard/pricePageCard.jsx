@@ -20,7 +20,7 @@ const pricePageCard = ({price, heading, subHeading}) => {
              <p className={styles.priceText}>/año sin IVA</p>
         </div>
         
-        <Link href={"./paymentPage"}><Button price={price}/></Link>
+        <Link href={"./paymentPage"}><Button title="Choose Plan"/></Link>
         
         <div className={styles.descSection}>
             <p className={styles.descHeading}>Envíe su residuo a nuestro almacén o nuestros puntos de recogida:</p>
