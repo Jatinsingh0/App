@@ -2,6 +2,11 @@ import React from "react";
 import styles from "./pricingPage.module.css";
 import PricePageCard from "../components/pricePageCard/pricePageCard";
 
+export const metadata = {
+  title: "Home",
+  description: "This is a PricePage",
+};
+
 const PricePage = () => {
   return (
     <div className={styles.container}>

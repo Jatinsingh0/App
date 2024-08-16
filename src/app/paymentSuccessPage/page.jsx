@@ -3,6 +3,10 @@ import styles from "./paymentSuccess.module.css";
 import Image from 'next/image';
 import Link from 'next/link';
 
+export const metadata = {
+  title: "Payment Success",
+  description: "This is a payment success page.",
+};
 const page = () => {
   return (
     <div className={styles.container}>

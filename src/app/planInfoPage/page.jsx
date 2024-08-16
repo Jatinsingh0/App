@@ -3,6 +3,10 @@ import styles from "./planInfoPage.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
+export const metadata = {
+  title: "PlanInfo",
+  description: "This is a PlanInfo Page",
+};
 const page = () => {
   return (
     <div className={styles.container}>

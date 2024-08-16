@@ -3,6 +3,10 @@ import styles from "./bank.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Banking",
+  description: "This is a banking page",
+};
 const page = () => {
   return (
     <div className={styles.container}>

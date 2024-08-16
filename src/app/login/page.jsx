@@ -3,6 +3,10 @@ import styles from "./login.module.css"
 import Image from 'next/image'
 import Link from 'next/link'
 
+export const metadata = {
+  title: "Login",
+  description: "This is a Login page",
+};
 const page = () => {
   return (
     <div className={styles.container}>

@@ -3,7 +3,10 @@ import styles from "./reviewPaymentPage.module.css"
 import Image from 'next/image';
 import Link from 'next/link';
 
-
+export const metadata = {
+  title: "ReviewPayment",
+  description: "This is a ReviewPayment page",
+};
 const ReviewPayment = () => {
   return (
     <div className={styles.container}>
