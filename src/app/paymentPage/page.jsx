@@ -1,15 +1,15 @@
 "use client"
 
-import React from "react";
+import React, { Suspense } from "react";
 import styles from "./payment.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
-
-const PaymentPage = () => {
+const PaymentPageContent = () => {
   const searchParams = useSearchParams(); 
   const price = searchParams.get("price") || "0";
+
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
@@ -18,7 +18,7 @@ const PaymentPage = () => {
             <Link href={"/"}>
               <Image
                 src="/leftArrow.png"
-                alt=""
+                alt="Back Arrow"
                 fill
                 className={styles.image}
               />
@@ -43,7 +43,7 @@ const PaymentPage = () => {
           </div>
           <div className={styles.total}>
             <p>Total a pagar :</p>
-            <p>20.00€</p>
+            <p>{price}€</p>
           </div>
         </div>
 
@@ -59,7 +59,7 @@ const PaymentPage = () => {
             <Link href={"/bank"}>
               <Image
                 src="/tarjeta.png"
-                alt=""
+                alt="Credit Card"
                 fill
                 className={styles.imageTarjeta}
               />
@@ -67,19 +67,19 @@ const PaymentPage = () => {
           </div>
           <div className={styles.imageWrapper}>
             <Link href={"/reviewPaymentPage"}>
-              <Image src="/paypal.png" alt="" fill className={styles.image} />
+              <Image src="/paypal.png" alt="PayPal" fill className={styles.image} />
             </Link>
           </div>
 
           <div className={styles.imageWrapper}>
             <Link href={"/bank"}>
-              <Image src="/bank.png" alt="" fill className={styles.image} />
+              <Image src="/bank.png" alt="Bank Transfer" fill className={styles.image} />
             </Link>
           </div>
 
           <div className={styles.imageWrapper}>
             <Link href={"/bank"}>
-              <Image src="/pago.png" alt="" fill className={styles.image} />
+              <Image src="/pago.png" alt="Other Payment" fill className={styles.image} />
             </Link>
           </div>
         </div>
@@ -98,5 +98,11 @@ const PaymentPage = () => {
     </div>
   );
 };
+
+const PaymentPage = () => (
+  <Suspense fallback={<div>Loading...</div>}>
+    <PaymentPageContent />
+  </Suspense>
+);
 
 export default PaymentPage;
