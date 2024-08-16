@@ -111,26 +111,30 @@
     gap: 2px;
 }
 
-@media screen and (max-width: 368px){
+@media screen and (max-width: 368px) {
     .desc {
-        font-size: 18px;
+        font-size: 22px;
     }
+
     .priceSection .price {
-        font-size: 60.8px;
+        font-size: 64.8px;
     }
-    
+
     .priceSection .priceText {
         font-size: 14px;
     }
+
     .planDetails {
-        font-size: 11px;
+        font-size: 14px;
     }
-    .button{
-        width: 200px;
-    height: 45px;
+
+    .button {
+        width: 220px;
+        height: 45px;
     }
-    .button2{
-        width: 200px;
-    height: 45px;
+
+    .button2 {
+        width: 220px;
+        height: 45px;
     }
 }

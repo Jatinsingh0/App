@@ -29,7 +29,7 @@ const page = () => {
 
         <div className={styles.planDetails}>
           <div className={styles.planDetails1}>
-            <p>ID de transacción</p>
+            <p>ID transacción</p>
             <p>Cantidad</p>
             <p>Cargar :</p>
             <p>Total :</p>
