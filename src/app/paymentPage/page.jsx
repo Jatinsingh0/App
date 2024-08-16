@@ -1,13 +1,15 @@
+"use client"
+
 import React from "react";
 import styles from "./payment.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 
-export const metadata = {
-  title: "PaymentPage",
-  description: "This is a PaymentPage",
-};
+
 const PaymentPage = () => {
+  const searchParams = useSearchParams(); 
+  const price = searchParams.get("price") || "0";
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
@@ -32,7 +34,7 @@ const PaymentPage = () => {
           </div>
 
           <div className={styles.price}>
-            <p>20€</p>
+            <p>{price}</p>
           </div>
 
           <div className={styles.Impuesto}>

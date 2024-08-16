@@ -5,8 +5,8 @@ import Button from '../button/button';
 import Link from 'next/link';
 
 
-
 const pricePageCard = ({price, heading, subHeading}) => {
+  
   return (
     <div className={styles.container}>
         <div className={styles.wrapper}>
@@ -20,7 +20,7 @@ const pricePageCard = ({price, heading, subHeading}) => {
              <p className={styles.priceText}>/año sin IVA</p>
         </div>
         
-        <Link href={"./paymentPage"}><Button title="Choose Plan"/></Link>
+        <Link href={`/paymentPage?price=${price}`}><Button title="Choose Plan"/></Link>
         
         <div className={styles.descSection}>
             <p className={styles.descHeading}>Envíe su residuo a nuestro almacén o nuestros puntos de recogida:</p>

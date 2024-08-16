@@ -13,7 +13,7 @@ const page = () => {
       <div className={styles.wrapper}>
         <div className={styles.planHeading}>
           <div className={styles.imageContainer}>
-            <Link href={"/paymentPage"}>
+            <Link href={"/"}>
               <Image
                 src="/leftArrow.png"
                 alt=""
