@@ -35,6 +35,8 @@ a {
   padding-right: 40px;
 }
 
+/* Media queries */
+
 @media screen and (max-width: 1644px) {
   .wrapper {
     max-width: 1366px;

@@ -11,7 +11,7 @@ const page = () => {
   return (
     <div className={styles.container}>
       <div className={styles.headingLogo}>
-        <Link href={"/paymentPage"}>
+        <Link href={"/"}>
           <Image
             src="/bankHeading.png"
             alt=""
