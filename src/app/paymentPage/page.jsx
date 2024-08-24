@@ -14,11 +14,11 @@ const PaymentPageContent = () => {
   useEffect(() => {
     const priceParam = searchParams.get("price");
     if (priceParam) {
-      // If there's a price in the query params, set it to state and localStorage
+      // If there's a price in the query params, setting to state and localStorage
       setPrice(priceParam);
       localStorage.setItem("price", priceParam);
     } else {
-      // when we came back, try to get the price from localStorage
+      // trying to get the price from localStorage
       const storedPrice = localStorage.getItem("price");
       if (storedPrice) {
         setPrice(storedPrice);
