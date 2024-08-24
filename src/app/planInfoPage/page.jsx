@@ -1,19 +1,26 @@
-import React from "react";
+"use client"
+
+import React, { useEffect, useState } from "react";
 import styles from "./planInfoPage.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
-export const metadata = {
-  title: "PlanInfo",
-  description: "This is a PlanInfo Page",
-};
+
 const page = () => {
+
+   // Getting Price From localStorage
+  const[price, setPrice] = useState(null);
+  useEffect(()=>{
+    const storedPrice = localStorage.getItem("price")
+    setPrice(storedPrice)
+  }, [])
+
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.planHeading}>
           <div className={styles.imageContainer}>
-            <Link href={"/"}>
+            <Link href={"/paymentPage"}>
               <Image
                 src="/leftArrow.png"
                 alt=""
@@ -26,7 +33,7 @@ const page = () => {
         </div>
 
         <div className={styles.priceSection}>
-          <p className={styles.price}>20€</p>
+          <p className={styles.price}>{price}</p>
           <p className={styles.priceText}>/año sin IVA</p>
         </div>
         <p className={styles.desc}>ECORESPONSABILIDAD</p>

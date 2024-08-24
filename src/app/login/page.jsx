@@ -10,6 +10,16 @@ export const metadata = {
 const page = () => {
   return (
     <div className={styles.container}>
+      <div className={styles.imageContainer}>
+            <Link href={"/paymentPage"}>
+              <Image
+                src="/leftArrow.png"
+                alt="Back Arrow"
+                fill
+                className={styles.image}
+              />
+            </Link>
+          </div>
         <div className={styles.paypalLogo}>
             <Link href={"/"}>
             <Image
