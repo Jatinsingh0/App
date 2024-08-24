@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 
-const page = () => {
+const planInfoPage = () => {
 
    // Getting Price From localStorage
   const[price, setPrice] = useState(null);
@@ -70,4 +70,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default planInfoPage;
